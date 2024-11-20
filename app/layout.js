@@ -3,6 +3,7 @@ import"./globals.css";
 import Link from "next/link"
 import ScrollAnimation from "./scrolleffect";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       </div>
         <main>{children}</main>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
