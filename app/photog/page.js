@@ -4,7 +4,6 @@ import fs from "fs";
 import path from "path";
 
 
-
 export default async function photog() {
   const photosDirectory = path.join(process.cwd(), "public/photos");
   const fileNames = fs.readdirSync(photosDirectory);
@@ -13,12 +12,12 @@ export default async function photog() {
   return (
     <div className="">
       <div className="topphoto">
-      <img src={`/photos/LCH03598.jpg`} alt={`LCH03598.jpg`} />
+      <Image src={"/photos/LCH03598.jpg"} alt={"LCH03598.jpg"} />
       </div>
       <div className="masonry-container">
         {photos.map((photo, index) => (
           <div key={index} className="masonry-item">
-            <img src={`/photos/${photo}`} alt={`Photo ${index + 1}`} />
+            <Image src={`/photos/${photo}`} alt={`Photo ${index + 1}`} />
           </div>
         ))}
       </div>

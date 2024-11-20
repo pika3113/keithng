@@ -45,7 +45,7 @@ const HomePage = () => {
 
       <div className="main-page-greeting-content">
         <div className="main-page-greeting font-bold">Hi,</div>
-        <div className="main-page-greeting-animate font-bold">I"m Keith</div>
+        <div className="main-page-greeting-animate font-bold">I&quot;m Keith</div>
       </div>
     
       <main>
@@ -60,7 +60,7 @@ const HomePage = () => {
         <div style={{ height: "2000px" }}></div>
       </main>
 
-      <script src="mainpagename.js"></script>
+      <script src="mainpagename.js" async />
     </main>
   );
 };
