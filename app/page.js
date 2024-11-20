@@ -45,7 +45,7 @@ const HomePage = () => {
 
       <div className="main-page-greeting-content">
         <div className="main-page-greeting font-bold">Hi,</div>
-        <div className="main-page-greeting-animate font-bold">I&quot;m Keith</div>
+        <div className="main-page-greeting-animate font-bold">I&apos;m Keith</div>
       </div>
     
       <main>
