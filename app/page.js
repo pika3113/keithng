@@ -1,6 +1,6 @@
-'use client';
+"use client";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const HomePage = () => {
@@ -17,20 +17,20 @@ const HomePage = () => {
 
   useEffect(() => {
     // Handle dynamic height adjustment on component mount
-    const navbar = document.querySelector('.stickytop');
-    const bottomDiv = document.querySelector('.main-page-greeting-content');
+    const navbar = document.querySelector(".stickytop");
+    const bottomDiv = document.querySelector(".main-page-greeting-content");
 
     const updateBottomDivHeight = () => {
       const navbarHeight = navbar.offsetHeight;
-      bottomDiv.style.setProperty('--navbar-height', `${navbarHeight}px`);
+      bottomDiv.style.setProperty("--navbar-height", `${navbarHeight}px`);
     };
 
     // Update height on load and window resize
-    window.addEventListener('resize', updateBottomDivHeight);
+    window.addEventListener("resize", updateBottomDivHeight);
     updateBottomDivHeight(); // Initial height calculation
 
     return () => {
-      window.removeEventListener('resize', updateBottomDivHeight);
+      window.removeEventListener("resize", updateBottomDivHeight);
     };
   }, []); // Empty dependency array to run only once after the component mounts
 
@@ -45,7 +45,7 @@ const HomePage = () => {
 
       <div className="main-page-greeting-content">
         <div className="main-page-greeting font-bold">Hi,</div>
-        <div className="main-page-greeting-animate font-bold">I'm Keith</div>
+        <div className="main-page-greeting-animate font-bold">I"m Keith</div>
       </div>
     
       <main>
@@ -57,7 +57,7 @@ const HomePage = () => {
           <p>YapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYap</p>
           <p>YapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYapYap</p>
         </div>
-        <div style={{ height: '2000px' }}></div>
+        <div style={{ height: "2000px" }}></div>
       </main>
 
       <script src="mainpagename.js"></script>

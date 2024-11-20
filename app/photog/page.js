@@ -1,18 +1,18 @@
 import Image from "next/image";
-import Link from 'next/link'
-import fs from 'fs';
-import path from 'path';
+import Link from "next/link"
+import fs from "fs";
+import path from "path";
 
 
 
 export default async function photog() {
-  const photosDirectory = path.join(process.cwd(), 'public/photos');
+  const photosDirectory = path.join(process.cwd(), "public/photos");
   const fileNames = fs.readdirSync(photosDirectory);
   const photos = fileNames.filter(file => /\.(jpg|jpeg|png|gif|webp)$/i.test(file));
 
   return (
-    <div className=''>
-      <div className='topphoto'>
+    <div className="">
+      <div className="topphoto">
       <img src={`/photos/LCH03598.jpg`} alt={`LCH03598.jpg`} />
       </div>
       <div className="masonry-container">
